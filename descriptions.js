@@ -33,3 +33,20 @@ function addTrainingText() {
 document.getElementById("training-pill").addEventListener("mouseenter", () => {
   addTrainingText();
 });
+//experience pill
+const experienceText = "I had the opportunity to work on real projects and gain skills in different areas of programming, such as website development and database management. Additionally, I was able to collaborate with other interns and industry professionals, learning a lot from their work. The work environment was very stimulating and gave me the opportunity to apply the theoretical knowledge acquired during my studies.";
+
+const experienceTextElement = document.getElementById("experience-text");
+let currentIndex2 = 0;
+
+function addExperienceText() {
+  if (currentIndex2 < experienceText.length) {
+    experienceTextElement.innerHTML += experienceText.charAt(currentIndex2);
+    currentIndex2++;
+    setTimeout(addExperienceText, 5);
+  }
+}
+
+document.getElementById("experience-pill").addEventListener("mouseenter", () => {
+  addExperienceText();
+});
