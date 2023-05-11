@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0510089784.js" crossorigin="anonymous"></script>
     <title>Curriculm Marco Amico</title>
 </head>
@@ -13,7 +17,7 @@
     <header>
         <nav>
             <div class="float-start h-100 d-flex align-items-center">
-                <img class="h-100" src="img/logo.jpg" alt="">
+                <img class="h-100" src="img/logo.png" alt="">
                 <b class="fs-3">Marco Amico</b>
             </div>
             <div class="nav-1 float-end align-items-center h-100">
@@ -35,32 +39,52 @@
                 </ul>
             </div>
         </nav>
-        <!--who am I?-->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-6">
-                    <div id="who-pill" class="pill bg-dark col-6 mt-5">
-                        <h1 class="text-center">Who i am?</h1>
-                        <p id="who-text"></p>
+        <div class="container">
+            <div class="row box bg-dark">
+                <div class="col-xs-12 col-sm-6 col-m-6 col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="square d-flex align-items-center justify-content-center">
+                        <div class="frame"></div>
+                        <img src="img/jumbo.png" alt="">
                     </div>
                 </div>
-                <div class="col-6">
-                    <img id="foto-me" class="mt-5 float-end" src="img/jumbo.png" alt="">
+                <div class="row col-xs-12 col-sm-6 col-m-6 col-lg-6 d-flex align-items-center justify-content-center">
+                    <h1 class="col-12 text-center">MARCO AMICO</h1>
+                    <h6 class="col-12 text-center">Web Developer</h6>
+                    <p class="col-12 text-center">My name is Marco Amico, and I am a Junior Web Developer. I recently completed my studies in Boolean, where I gained a solid foundation in web development. I have a passion for creating clean, functional code that enhances the user experience and is accessible to all.</p>
+                    <div class="col-6 text-center">
+                        <button id="hire-btn" class="btn btn-success">HIRE ME</button>
+                        <div id="hire" class="bg-success rounded mt-2 hide">
+                            <ul class="list-unstyled">
+                                <li>Email: marco.amico.lavoro@gmail.com</li>
+                                <li>Telefono: +393883519027</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-secondary">Resume</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <!-- trainee -->
-        <div class="container">
+    </header>  
+    <main class="bg-dark">
+        <div class="container pt-5">
             <div class="row">
-                <div class="col-6">
-                </div>
-                <div id="training-pill" class="pill bg-dark col-6 mt-5">
-                    <h1 class="text-center">Training</h1>
-                    <p id="training-text" ></p>
+                <div class="col-12">
+                    <h3 id="training-pill" class="w-50 m-auto text-center rounded-pill bg-beige text-dark">
+                        My service
+                    </h3>
+                    <div class="row">
+                        <div class="rounded bg-beige text-dark">
+                            <p class="text-dark hide p-3" id="training-text" ></p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!-- trainee -->
+        <div class="container">
+            
         <!-- experience -->
             <div class="row">
                 <div id="experience-pill" class="pill bg-dark col-6 mt-5">
@@ -77,6 +101,7 @@
 
     </footer>
     <script src="nav.js"></script>
+    <script src="buttons.js"></script>
     <script src="descriptions.js"></script>
 </body>
 </html>
