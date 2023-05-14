@@ -42,8 +42,8 @@
 /* header */
 header {
     background-image: url("img/background-header.jpg");
-    background-size: cover;
-    height: 100vh;
+    background-size: contain;
+    min-height: 100vh;
     
 }
 @media (max-width: 425px) {
@@ -153,8 +153,7 @@ nav div .list-unstyled li {
 
 @media (max-width: 425px) { 
      .box {
-        position: absolute;
-        top: 60%;
+        padding-top: 45vh;
      }
 }
 .square {
@@ -186,6 +185,25 @@ nav div .list-unstyled li {
     }
     
 }
+
+/* jumbo nuovo */
+.title {
+    display: none;
+    animation: pagina 1s ease-in-out;
+}
+a.active {
+    background-color: beige;
+    color: rgb(32, 32, 32) !important;
+}
+@keyframes pagina {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 /* main */
 main {
     background-color: white
