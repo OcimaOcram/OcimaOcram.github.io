@@ -6,7 +6,10 @@
     color: beige;
     font-family: 'Signika Negative', sans-serif;
 }
-
+.w-80 {
+    width: 80%;
+    margin: auto;
+}
 .bg-beige {
     background-color: beige;
 }
