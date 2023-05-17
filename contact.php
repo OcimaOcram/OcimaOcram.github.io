@@ -2,9 +2,9 @@
 // Verifica se il form è stato inviato
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Recupera i valori dal form
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
+  $name = $_GET["name"];
+  $email = $_GET["email"];
+  $message = $_GET["message"];
   
   // Imposta l'indirizzo email a cui inviare il messaggio
   $to = "marco.amico.lavoro@gmail.com";
