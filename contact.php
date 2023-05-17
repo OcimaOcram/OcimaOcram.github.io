@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Invia l'email
   mail($to, $subject, $message, $headers);
   
-  // Reindirizza l'utente a una pagina di conferma
+  // Reindirizza l'utente a una pagina di conferma da creare
   header("Location: conferma.html");
   exit();
 }
