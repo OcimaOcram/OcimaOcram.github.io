@@ -1,6 +1,6 @@
 <?php
 // Verifica se il form è stato inviato
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
   // Recupera i valori dal form
   $name = $_GET["name"];
   $email = $_GET["email"];
